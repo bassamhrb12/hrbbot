@@ -22,7 +22,7 @@ def add_watermark(image_stream):
             font = ImageFont.truetype("Elgharib-AlwiSahaf.ttf", FONT_SIZE)
         except IOError:
             font = ImageFont.load_default()
-            print("لم يتم العثور على خط arial.ttf، سيتم استخدام الخط الافتراضي.")
+            print("لم يتم العثور على خط Elgharib-AlwiSahaf.ttf، سيتم استخدام الخط الافتراضي.")
             
         text_bbox = draw.textbbox((0, 0), WATERMARK_TEXT, font=font)
         text_width = text_bbox[2] - text_bbox[0]
