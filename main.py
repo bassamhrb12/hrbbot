@@ -41,9 +41,9 @@ def add_watermark(image_stream, texts, color):
         draw = ImageDraw.Draw(txt_layer)
 
         try:
-            font = ImageFont.truetype("arial.ttf", FONT_SIZE)
-        except IOError:
-            print("لم يتم العثور على خط arial.ttf، سيتم استخدام الخط الافتراضي.")
+font = ImageFont.truetype("Elgharib-AlwiSahafa.ttf", FONT_SIZE)
+except IOError:
+            print("لم يتم العثور على خط Elgharib-AlwiSahafa.ttf، سيتم استخدام الخط الافتراضي.")
             font = ImageFont.load_default()
 
         total_text_height = 0
