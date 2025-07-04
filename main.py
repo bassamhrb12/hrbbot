@@ -19,7 +19,7 @@ def add_watermark(image_stream):
         
         try:
             # يفترض أن ملف الخط موجود في نفس المجلد
-            font = ImageFont.truetype("arial.ttf", FONT_SIZE)
+            font = ImageFont.truetype("Elgharib-AlwiSahaf.ttf", FONT_SIZE)
         except IOError:
             font = ImageFont.load_default()
             print("لم يتم العثور على خط arial.ttf، سيتم استخدام الخط الافتراضي.")
